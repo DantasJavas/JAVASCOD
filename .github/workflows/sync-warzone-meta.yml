@@ -1,0 +1,25 @@
+name: Sync Warzone meta
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch MetaRadar feed
+        run: |
+          set -euo pipefail
+          curl --fail --silent --show-error --retry 3 https://metaradar.gg/api/v1/meta/warzone -o data/warzone.json
+          jq -e '.game.slug == "warzone" and (.weapons | type == "array")' data/warzone.json >/dev/null
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- data/warzone.json; then exit 0; fi
+          git add data/warzone.json
+          git commit -m "chore: update Warzone meta feed"
+          git push
