@@ -13,3 +13,11 @@ main{max-width:1240px;margin:auto;padding:0 22px 36px}.hero{padding:34px 8px 26p
 @media(max-width:560px){header{height:64px;padding-inline:16px}.brand{font-size:18px}.hero{padding:24px 0 20px}.stats{gap:8px}.stats article{padding:12px}.stats b{font-size:24px}.stats small{font-size:9px}.tabs{overflow:auto}.tabs button{white-space:nowrap;flex:1;padding:10px 12px}.filters{grid-template-columns:1fr 1fr}.weapon-grid{grid-template-columns:1fr}.weapon-card{grid-template-columns:96px minmax(0,1fr)}.weapon-art{width:96px;height:108px}.compare-select,.compare-grid{grid-template-columns:1fr}}
 @media(orientation:landscape) and (max-height:520px){header{position:relative}.hero{padding-top:18px}.stats{margin-top:14px}}
 [hidden]{display:none!important}
+.weapon-tags{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin:7px 0}
+.weapon-class{font-size:12px;color:var(--muted)}
+.attachment-list{list-style:none;padding:0;margin:10px 0 0;display:grid;gap:7px}
+.attachment-list li{display:grid;grid-template-columns:minmax(92px,34%) minmax(0,1fr);gap:8px;padding:8px 10px;border:1px solid #ffffff12;border-radius:9px;background:#0b1522;font-size:12px;line-height:1.35}
+.attachment-list li span{color:var(--muted)}
+.attachment-list li b{font-weight:650;overflow-wrap:anywhere}
+.copy-code{margin-top:12px;color:var(--cyan);border-color:#35718a;background:#102438;font-size:12px}
+@media(max-width:560px){.attachment-list li{grid-template-columns:105px minmax(0,1fr)}}
