@@ -21,3 +21,29 @@ main{max-width:1240px;margin:auto;padding:0 22px 36px}.hero{padding:34px 8px 26p
 .attachment-list li b{font-weight:650;overflow-wrap:anywhere}
 .copy-code{margin-top:12px;color:var(--cyan);border-color:#35718a;background:#102438;font-size:12px}
 @media(max-width:560px){.attachment-list li{grid-template-columns:105px minmax(0,1fr)}}
+
+/* WARZONE-inspired tactical atmosphere */
+:root{--bg:#090d0b;--panel:#141b17;--line:#354239;--text:#edf2e9;--muted:#a2ad9e;--cyan:#72d8e8;--lime:#c4e17a}
+body{background:radial-gradient(ellipse at 78% 5%,rgba(91,116,67,.25),transparent 34%),radial-gradient(ellipse at 12% 42%,rgba(43,66,52,.28),transparent 42%),linear-gradient(145deg,#080c0a 0%,#111914 52%,#080c0a 100%);isolation:isolate}
+body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.32;background:repeating-linear-gradient(132deg,transparent 0 34px,rgba(188,205,166,.035) 35px 36px,transparent 37px 72px),repeating-radial-gradient(ellipse at 78% 20%,transparent 0 42px,rgba(180,198,160,.055) 43px 44px,transparent 45px 86px),linear-gradient(90deg,rgba(0,0,0,.25),transparent 35%,rgba(0,0,0,.3))}
+header{background:rgba(7,12,9,.91);border-bottom-color:rgba(169,190,150,.18)}
+.brand{color:#80d9e5}.brand small{color:#a0ad9a}
+.hero{position:relative}.hero:after{content:"";position:absolute;right:0;top:14px;width:min(34vw,340px);height:190px;pointer-events:none;opacity:.24;background:radial-gradient(ellipse,rgba(174,195,143,.25),transparent 68%);filter:blur(12px)}
+.eyebrow{color:#b4c09f}
+.weapon-card{position:relative;grid-template-columns:148px minmax(0,1fr);background:linear-gradient(135deg,rgba(35,47,37,.96),rgba(14,21,17,.98) 66%);border-color:rgba(160,183,137,.3);box-shadow:0 12px 30px rgba(0,0,0,.22);min-height:210px}
+.weapon-card:before{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(115deg,rgba(161,184,129,.08),transparent 38%);border-radius:inherit}
+.weapon-visual{position:relative;min-width:0;min-height:150px;display:flex;align-items:center;justify-content:center;overflow:hidden;border:1px solid rgba(171,194,148,.16);border-radius:12px;background:radial-gradient(ellipse at 50% 52%,rgba(128,151,105,.22),transparent 68%),linear-gradient(145deg,#263329,#111914)}
+.weapon-visual:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(0,0,0,.25),transparent 32%,transparent 70%,rgba(0,0,0,.22))}
+.weapon-art{position:relative;z-index:1;width:100%;height:150px;max-width:100%;object-fit:contain;padding:12px;background:transparent;border-radius:0;filter:drop-shadow(0 8px 8px rgba(0,0,0,.52))}
+.visual-label{position:absolute;top:8px;left:9px;z-index:2;font-size:8px;letter-spacing:.16em;color:#c2d0b1;font-weight:900;text-shadow:0 1px 4px #000}
+.weapon-visual.image-missing:before{content:"IMAGEM INDISPONÍVEL";font-size:9px;letter-spacing:.1em;color:#aab59f}
+.weapon-title{color:#f0f4e9}.rank{color:#b3bea9}
+.tier{background:#35462e;color:#d4ef91}.tier-a{color:#83d7e5;background:#243b3b}
+.weapon-class{color:#c0cbb9}.build-label{color:#80d9e5}
+.attachment-list li{background:rgba(5,11,8,.48);border-color:rgba(169,190,150,.12)}
+.attachment-list li span{color:#aab69f}.attachment-list li b{color:#edf2e9}
+.copy-code{background:#1c302b;border-color:#52736a;color:#a2e7e8}
+button,select,input{background:#17221b;border-color:#3c4b3d}
+button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible{outline-color:#8bdce7}
+@media(max-width:850px){.weapon-card{grid-template-columns:120px minmax(0,1fr)}.weapon-visual{min-height:138px}.weapon-art{height:138px}}
+@media(max-width:560px){.weapon-card{grid-template-columns:112px minmax(0,1fr)}.weapon-visual{min-height:132px}.weapon-art{height:132px}}
