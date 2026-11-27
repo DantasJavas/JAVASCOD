@@ -1,19 +1,22 @@
 <!doctype html>
 <html lang="pt-BR"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#090e18"><meta name="description" content="JAVASCOD — armas meta atuais de Warzone e suas builds.">
+<meta name="theme-color" content="#090d0b"><meta name="description" content="JAVASCOD — arsenal, builds e histórico do meta de Warzone.">
 <link rel="manifest" href="./manifest.webmanifest"><link rel="icon" href="./assets/icon.svg"><link rel="stylesheet" href="./styles.css">
-<title>JAVASCOD | Armas Meta Warzone</title></head>
+<title>JAVASCOD | Warzone Meta Intel</title></head>
 <body>
-<header><a class="brand" href="./">JAVASCOD <small>ARMAS META • WARZONE</small></a><button id="refresh" class="refresh">↻ Atualizar</button></header>
+<header><a class="brand" href="./">JAVASCOD <small>WARZONE META INTEL</small></a><button id="refresh" class="refresh">↻ Atualizar</button></header>
 <main>
-<section class="hero"><p class="eyebrow">ARSENAL ATUALIZADO • CALL OF DUTY WARZONE</p><h1>Somente o que está no <em>meta.</em></h1><p class="intro">Veja as armas em destaque e os acessórios recomendados para cada uma. Sem estimativas de dano ou TTK.</p>
-<div class="feed-meta"><span id="season">Temporada —</span><span id="updated">Atualização —</span><span id="count">— armas</span></div></section>
-<section class="panel" id="arsenal">
+<section class="hero"><p class="eyebrow">ARSENAL ATUALIZADO • CALL OF DUTY WARZONE</p><h1>Domine o <em>meta.</em></h1><p class="intro">Armas em destaque, acessórios recomendados e mudanças no ranking. Sem estatísticas inventadas.</p><div class="feed-meta"><span id="season">Temporada —</span><span id="updated">Atualização —</span><span id="count">— armas</span></div></section>
+<nav class="main-tabs" aria-label="Navegação principal"><button class="active" data-view="arsenal">Arsenal</button><button data-view="favorites">★ Favoritos <span id="favCount">0</span></button><button data-view="history">Histórico</button></nav>
+<section class="panel" id="arsenalView">
 <div class="filters"><input id="search" type="search" placeholder="Buscar arma…" aria-label="Buscar arma"><select id="tier" aria-label="Filtrar por tier"><option value="">Todos os tiers</option><option value="S">Tier S</option><option value="A">Tier A</option></select><select id="category" aria-label="Filtrar por categoria"><option value="">Todas as categorias</option></select></div>
-<p class="mode-note">Lista geral de Warzone conforme o ranking da fonte. Os modos Battle Royale e Ressurgência não são separados quando a fonte não fornece rankings próprios.</p>
+<p class="mode-note">Ranking geral de Warzone fornecido pelo MetaRadar. Os modos não são separados quando a fonte não publica rankings específicos.</p>
 <div id="weapons" class="weapon-grid" aria-live="polite">Carregando arsenal…</div>
-<p class="credit">Ranking e builds por <a href="https://metaradar.gg/" target="_blank" rel="noopener">MetaRadar</a>. Nomes comerciais dos acessórios são preservados quando necessário.</p>
-</section></main>
-<footer>JAVASCOD • Projeto independente de fãs. Não afiliado à Activision. Dados por <a href="https://metaradar.gg/" target="_blank" rel="noopener">MetaRadar</a>.</footer>
+</section>
+<section class="panel" id="favoritesView" hidden><p class="eyebrow">SEU ARSENAL PESSOAL</p><h2>Armas favoritas</h2><div id="favoritesList" class="weapon-grid"></div></section>
+<section class="panel" id="historyView" hidden><p class="eyebrow">INTEL DE BALANCEAMENTO</p><h2>Histórico do meta</h2><p class="mode-note">Compara o ranking atual com a última versão salva neste dispositivo. Alterações de balanceamento são exibidas quando a fonte as informa.</p><div id="historyList"></div></section>
+<dialog id="weaponDialog"><button class="dialog-close" id="closeDialog" aria-label="Fechar">✕</button><div id="dialogContent"></div></dialog>
+</main>
+<footer>JAVASCOD • Projeto independente de fãs. Não afiliado à Activision. Ranking e builds por <a href="https://metaradar.gg/" target="_blank" rel="noopener">MetaRadar</a>.</footer>
 <script src="./app.js" defer></script></body></html>
