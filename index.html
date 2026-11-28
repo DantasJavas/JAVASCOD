@@ -7,13 +7,13 @@
 <body>
 <header><a class="brand" href="./">JAVASCOD <small>WARZONE META INTEL</small></a><button id="refresh" class="refresh">↻ Atualizar</button></header>
 <main>
-<section class="hero"><p class="eyebrow">MODO RUSH • CALL OF DUTY WARZONE</p><h1>Domine o <em>meta.</em></h1><p class="intro">Loadouts para avançar, pressionar adversários e dominar confrontos de curta distância. Sem estatísticas inventadas.</p><div class="feed-meta"><span id="season">Temporada —</span><span id="updated">Atualização —</span><span id="count">— armas</span></div></section>
-<nav class="main-tabs" aria-label="Navegação principal"><button class="active" data-view="rush">⚡ Modo Rush</button><button data-view="favorites">★ Favoritos <span id="favCount">0</span></button><button data-view="history">Histórico</button></nav>
+<section class="hero"><p class="eyebrow">ARSENAL E MODO RUSH • CALL OF DUTY WARZONE</p><h1>Domine o <em>meta.</em></h1><p class="intro">Ranking técnico, armas e loadouts especializados para diferentes estilos de jogo. Sem estatísticas inventadas.</p><div class="feed-meta"><span id="season">Temporada —</span><span id="updated">Atualização —</span><span id="count">— armas</span></div></section>
+<nav class="main-tabs" aria-label="Navegação principal"><button class="active" data-view="arsenal">Arsenal</button><button data-view="rush">⚡ Modo Rush</button><button data-view="favorites">★ Favoritos <span id="favCount">0</span></button><button data-view="history">Histórico</button></nav>
 <section class="panel" id="rushView">
-<div class="rush-banner"><span class="rush-kicker">⚡ MODO RUSH</span><h2>Loadout Agressivo</h2><p>Seleção de armas para avanço, pressão constante e combates em curta distância.</p></div>
+<div class="rush-banner" id="rushBanner" hidden><span class="rush-kicker">⚡ MODO RUSH</span><h2>Loadout Agressivo</h2><p>Seleção de armas para avanço, pressão constante e combates em curta distância.</p></div>
 <div class="filters"><input id="search" type="search" placeholder="Buscar arma…" aria-label="Buscar arma"><select id="category" aria-label="Filtrar por categoria"><option value="">Todas as categorias</option></select></div>
 <p class="mode-note">Modo Rush: seleção de armas com foco em mobilidade e curta distância. Ranking e acessórios continuam sendo os dados técnicos publicados pelo MetaRadar.</p>
-<div id="weapons" class="weapon-grid" aria-live="polite">Carregando loadouts Rush…</div>
+<div id="weapons" class="weapon-grid" aria-live="polite">Carregando arsenal…</div>
 </section>
 <section class="panel" id="favoritesView" hidden><p class="eyebrow">SEU ARSENAL PESSOAL</p><h2>Armas favoritas</h2><div id="favoritesList" class="weapon-grid"></div></section>
 <section class="panel" id="historyView" hidden><p class="eyebrow">INTEL DE BALANCEAMENTO</p><h2>Histórico do meta</h2><p class="mode-note">Compara o ranking atual com a última versão salva neste dispositivo. Alterações de balanceamento são exibidas quando a fonte as informa.</p><div id="historyList"></div></section>
