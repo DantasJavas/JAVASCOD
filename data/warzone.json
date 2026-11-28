@@ -94,7 +94,7 @@
         "shareCode": "S04-AUXZ6-DU1Q1",
         "updatedAt": "2026-11-27T16:06:25.411+00:00"
       },
-      "rushScore": 58.4,
+      "rushScore": 36,
       "rushReason": "Melhor TTK de pico e escolha mais consistente; mobilidade inferior às outras opções.",
       "rushBuild": {
         "label": "Rush • pressão com controle",
@@ -251,7 +251,7 @@
         "shareCode": "S06-3K9Y5-K39PZ-B911",
         "updatedAt": "2026-11-27T16:06:25.363+00:00"
       },
-      "rushScore": 77.6,
+      "rushScore": 72,
       "rushReason": "Equilíbrio de mobilidade, velocidade de eliminação e pressão contínua.",
       "rushBuild": {
         "label": "Rush • pressão contínua",
@@ -1279,7 +1279,7 @@
   ],
   "rushMethodology": {
     "title": "Índice Rush JAVASCOD",
-    "description": "Pontuação heurística calculada a partir dos dados públicos de mobilidade, facilidade de uso e TTK de curta distância do CODMunity. Pesos: mobilidade 40%, TTK 35%, facilidade 25%. Não é uma estatística oficial do jogo.",
+    "description": "Índice comparativo JAVASCOD calculado entre as três opções Rush: mobilidade (40%, escala 0–10), TTK de curta distância (35%, normalizado entre o menor e o maior TTK do trio) e facilidade de uso (25%, escala 0–10). Usa dados públicos do CODMunity; não é estatística oficial do jogo.",
     "source": "https://codmunity.gg/warzone?playstyle=Close+Range",
     "updatedAt": "2026-11-27"
   }
