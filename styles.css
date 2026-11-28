@@ -292,3 +292,7 @@ button:active{transform:scale(.97)}
 .rush-loadout-tag{padding:5px 9px;border:1px solid rgba(181,255,38,.45);border-radius:20px;background:rgba(39,91,9,.38);letter-spacing:.04em;font-size:11px}
 .main-tabs button[data-view="rush"].active{background:linear-gradient(145deg,rgba(116,174,28,.42),rgba(27,52,20,.88));border-color:#a7ed24;color:#f5ffdf;box-shadow:0 0 16px rgba(160,235,30,.3),inset 0 1px 0 rgba(255,255,255,.28)}
 @media(max-width:560px){.rush-banner{padding:15px 14px 15px 112px;min-height:104px}.rush-banner:before{left:6px;width:94px;height:94px}.rush-banner h2{font-size:17px}.rush-banner p{font-size:12px}}
+
+.rush-score{display:inline-flex;align-items:center;padding:4px 8px;border:1px solid rgba(202,255,38,.38);border-radius:999px;background:rgba(61,91,20,.35);color:#d8ff80;font-size:11px;font-weight:850}
+.rush-reason{margin:8px 0;color:#c3d0b9;font-size:12px;line-height:1.45}
+.rush-method{margin:0 0 16px;padding:12px 14px;border:1px solid rgba(179,208,153,.18);border-radius:14px;background:rgba(10,18,12,.38);color:#bdc9b5;font-size:11px;line-height:1.5}
